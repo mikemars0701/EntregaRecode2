@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Book</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        html,
+        body {
+
+            width: 100%;
+            height: 100%;
+
+        }
+
+        body {
+            display: block;
+            background-image: url(img/img001.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        @font-face {
+            font-family: "BorelRegular";
+            src: url(Fonts/Borel-Regular.ttf);
+        }
+
+        h6 {
+            font-family: "BorelRegular";
+        }
+
+        .navbar-brand {
+            padding: 10px 0px 0px 10px;
+            color: #fff;
+
+
+        }
+
+        .navbar-brand:hover {
+            color: rgb(127, 180, 223);
+            /* Change the color of the logo text to white when hovering */
+            transform: scale(1.2);
+            /* Optional: Increase the size of the logo when hovering */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            /* Optional: Add a shadow effect when hovering */
+            transition: transform 0.5s ease;
+        }
+
+        .navbar .nav-link {
+
+            color: rgb(127, 180, 223);
+
+        }
+
+        .banner {
+            padding: 80px 0px 0px 80px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #fff;
+        }
+
+        .corpocard {
+            padding: 150px 80px 250px 80px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            grid-gap: 10px;
+
+
+        }
+
+        .card-body {
+
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 10px; 
+            
+        */
+        .card {
+            border-color: rgb(0, 0, 0);
+
+        }
+
+        
+        .footerzin {
+            
+            position: fixed;
+            width: 100%;
+            height: 65px;
+            background-color: #3b3744;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            left: 0; /* Alinha o footer à esquerda */
+            bottom: 0; /* Alinha o footer na parte inferior */
+            background: linear-gradient(to left, transparent, rgba(14, 46, 73, 0.5)), linear-gradient(to right, transparent, rgba(42, 20, 102, 0.5));
+        }
+
+    
+       .navbar-nav {
+         padding: 10px;
+         
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="cordanav">
+        <nav class="navbar navbar-expand-lg bg-body-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <h3>SPACE BOOK</h3>
+                    <h6>Explore your dreams</h6>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon btn btn-light btn-outline-primary"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Destinos
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="Terra.html">Terra</a></li>
+                                <li><a class="dropdown-item" href="Lua.html">Lua</a></li>
+                                <li><a class="dropdown-item" href="Marte.html">Marte</a></li>
+                                <li><a class="dropdown-item" href="Jupiter.html">Jupiter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    
+                    <ul class="navbar-nav">
+
+                        <a href="Promocoes.html" class="btn btn-dark">Promoções</a>
+                        
+
+                    </ul>
+                    <ul class="navbar-nav">
+
+                        <a href="Contato.html" class="btn btn-dark">Contato</a>
+                        
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <h1 style="font-size: 3vw;">Bem-vindo ao seu</h1>
+        <h1 style="font-size: 5vw;">MAPA DO SISTEMA SOLAR</h1>
+        <h1 style="font-size: 2vw;">Aqui você tem a chance de desbravar os principais corpos celestes do sistema solar
+        </h1>
+    </div>
+    <!--cards-->
+    <div class="corpocard">
+        <div class="card" style="width: 18rem;">
+            <img src="/img/lua01.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Lua</h5>
+                <p class="card-text">A aproximadamente 384.000 km de distância, a lua é um satélite natural da Terra,
+                    influenciando marés e inspirando a humanidade.</p>
+                <a href="Lua.html" class="btn btn-primary">Saiba mais</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/img/terra01.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Terra</h5>
+                <p class="card-text">Planeta Terra, terceiro do sistema solar. Com cerca de 12.742 km de diâmetro, é o
+                    lar da humanidade e tem aproximadamente 4,5 bilhões de anos.</p>
+                <a href="Terra.html" class="btn btn-primary">Saiba mais</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/img/jupiter01.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Jupiter</h5>
+                <p class="card-text">Júpiter, maior planeta do sistema solar, possui cerca de 139.820 km de diâmetro e
+                    está a uma distância de aprox. 588 milhões de km da Terra.</p>
+                <a href="Jupiter.html" class="btn btn-primary">Saiba mais</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/img/marte01.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Marte</h5>
+                <p class="card-text">Marte, o quarto planeta do sistema solar, tem cerca de 6.779 km de diâmetro. Está a
+                    uma distância média de aproximadamente 225 milhões de km da Terra.</p>
+                <a href="Marte.html" class="btn btn-primary">Saiba mais</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerzin">
+            <div class="blockquote-footer-primary">
+
+                <p style="font-size: 1;">SPACEBOOK by maycon. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Book by maycon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        html,
+        body {
+
+            width: 100%;
+            height: 100%;
+
+        }
+
+        body {
+            
+            display: block;
+            background-image: url(img/img001.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            
+        }
+
+        @font-face {
+            font-family: "BorelRegular";
+            src: url(Fonts/Borel-Regular.ttf);
+        }
+
+        h6 {
+            font-family: "BorelRegular";
+        }
+
+        .navbar-brand {
+            padding: 10px 0px 0px 10px;
+            color: #fff;
+        }
+
+        .navbar-brand:hover {
+            color: rgb(127, 180, 223);
+            /* Change the color of the logo text to white when hovering */
+            transform: scale(1.2);
+            /* Optional: Increase the size of the logo when hovering */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            /* Optional: Add a shadow effect when hovering */
+            transition: transform 0.5s ease;
+        }
+
+        .navbar .nav-link {
+
+            color: rgb(127, 180, 223);
+
+        }
+
+        .banner {
+            padding: 40px 0px 0px 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #fff;
+        }
+
+
+
+        .footerzin {
+            
+            position: fixed;
+            width: 100%;
+            height: 65px;
+            background-color: #3b3744;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            left: 0; /* Alinha o footer à esquerda */
+            bottom: 0; /* Alinha o footer na parte inferior */
+            background: linear-gradient(to left, transparent, rgba(14, 46, 73, 0.5)), linear-gradient(to right, transparent, rgba(42, 20, 102, 0.5));
+        }
+
+        .navbar-nav {
+         padding: 10px;
+         
+        }
+
+        .center-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-group {
+            margin-bottom: 30px; /* Adiciona um espaçamento vertical de 10px entre as opções do formulário */
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="cordanav">
+        <nav class="navbar navbar-expand-lg bg-body-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <h3>SPACE BOOK</h3>
+                    <h6>Explore your dreams</h6>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon btn btn-light btn-outline-primary"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Destinos
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="Terra.html">Terra</a></li>
+                                <li><a class="dropdown-item" href="Lua.html">Lua</a></li>
+                                <li><a class="dropdown-item" href="Marte.html">Marte</a></li>
+                                <li><a class="dropdown-item" href="Jupiter.html">Jupiter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                   
+                    <ul class="navbar-nav">
+
+                        <a href="Promocoes.html" class="btn btn-dark">Promoções</a>
+                        
+
+                    </ul>
+                    <ul class="navbar-nav">
+
+                        <a href="Contato.html" class="btn btn-dark">Contato</a>
+                        
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <div class="banner">
+        
+        <h1 style="font-size: 5vw;">Entre em contato conosco</h1>
+        <h1 style="font-size: 3vw;">Preencha o formulário e entraremos em contato! 
+        </h1>
+    </div>
+    
+    <div class="container center-div">
+        <div class="col-md-6">
+            <h2>Formulário de Contato</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" class="form-control" id="telefone" placeholder="Seu telefone">
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" class="form-control" id="assunto" placeholder="Assunto da mensagem">
+                </div>
+                <div class="form-group">
+                    <label for="descricao">Descrição:</label>
+                    <textarea class="form-control" id="descricao" rows="4" placeholder="Descreva sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div
+  
+
+  <footer>
+    <div class="footerzin">
+        <div class="blockquote-footer-primary">
+
+            <p style="font-size: 1;">SPACEBOOK by maycon. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous">
+    </script>
+</body>

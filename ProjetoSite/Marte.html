@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Book by maycon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        html,
+        body {
+
+            width: 100%;
+            height: 100%;
+
+        }
+
+        body {
+            
+            display: block;
+            background-image: url(img/img001.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            
+        }
+
+        @font-face {
+            font-family: "BorelRegular";
+            src: url(Fonts/Borel-Regular.ttf);
+        }
+
+        h6 {
+            font-family: "BorelRegular";
+        }
+
+        .navbar-brand {
+            padding: 10px 0px 0px 10px;
+            color: #fff;
+        }
+
+        .navbar-brand:hover {
+            color: rgb(127, 180, 223);
+            /* Change the color of the logo text to white when hovering */
+            transform: scale(1.2);
+            /* Optional: Increase the size of the logo when hovering */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            /* Optional: Add a shadow effect when hovering */
+            transition: transform 0.5s ease;
+        }
+
+        .navbar .nav-link {
+
+            color: rgb(127, 180, 223);
+
+        }
+
+        .banner {
+            padding: 40px 0px 120px 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #fff;
+        }
+
+        .corpocard {
+            padding: 80px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            grid-gap: 10px;
+
+
+        }
+
+
+        .card {
+            justify-content: center;
+            padding: 150px 0px 250px 0px;
+            height: 64vw;
+            margin: 0 auto;
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.0);
+            
+        }
+
+        
+
+        .footerzin {
+            
+            position: fixed;
+            width: 100%;
+            height: 65px;
+            background-color: #3b3744;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            left: 0; /* Alinha o footer à esquerda */
+            bottom: 0; /* Alinha o footer na parte inferior */
+            background: linear-gradient(to left, transparent, rgba(14, 46, 73, 0.5)), linear-gradient(to right, transparent, rgba(42, 20, 102, 0.5));
+        }
+
+
+        .navbar-nav {
+         padding: 10px;
+         
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="cordanav">
+        <nav class="navbar navbar-expand-lg bg-body-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <h3>SPACE BOOK</h3>
+                    <h6>Explore your dreams</h6>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon btn btn-light btn-outline-primary"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Destinos
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="Terra.html">Terra</a></li>
+                                <li><a class="dropdown-item" href="Lua.html">Lua</a></li>
+                                <li><a class="dropdown-item" href="Marte.html">Marte</a></li>
+                                <li><a class="dropdown-item" href="Jupiter.html">Jupiter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                  
+                    <ul class="navbar-nav">
+
+                        <a href="Promocoes.html" class="btn btn-dark">Promoções</a>
+                        
+
+                    </ul>
+                    <ul class="navbar-nav">
+
+                        <a href="Contato.html" class="btn btn-dark">Contato</a>
+                        
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <div class="banner" style="width: 90vw" ;>
+        <h1 style="font-size: 5vw;">Marte</h1>
+        <h1 style="font-size: 2vw;">O planeta vermelho</h1>
+
+        <h1 style="font-size: 2vw;">Reserve já uma viagem para orbitar este lindo corpo celeste!</h1>
+    </div>
+    <!--cards-->
+    <div class="card" style="width: 90vw" ;>
+
+        <div class="card-body">
+            <!-- Conteúdo do card, como título, texto, etc. -->
+            <h5 class="card-title">Fotos reais de Marte</h5>
+            <p class="card-text">Essas fotos foram tiradas por sondas da NASA ao orbiter este majestoso corpo celeste.
+            </p>
+            <!-- Carousel do Bootstrap -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" style="border-radius: 55px">
+                    <div class="carousel-item active">
+                        <img src="/img/marte01.jpg" class="d-block w-100" alt="Imagem 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/marte02.png" class="d-block w-100" alt="Imagem 2">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Esta viagem encontra-se indisponível</h5>
+                <p class="card-text">Clique no botão abaixo, preencha o formulário e entraremos em contato quando
+                    estiver.
+                </p>
+                <a href="#" class="btn btn-primary">Reserve já</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerzin">
+            <div class="blockquote-footer-primary">
+
+                <p style="font-size: 1;">SPACEBOOK by maycon. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous">
+    </script>
+</body>
