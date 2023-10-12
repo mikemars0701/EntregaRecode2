@@ -4,43 +4,32 @@ USE  SpaceBook;
 
 CREATE TABLE 
 	viagem (
-FOREIGN KEY (id_passageiro) REFERENCES passageiro (id_passageiro),
-FOREIGN KEY (id_piloto) REFERENCES piloto (id_piloto),
-id_viagem INT AUTO_INCREMENT PRIMARY KEY
-data_viagem VARCHAR(10) NOT NULL,
-destino_viagem VARCHAR(10) NOT NULL,
-preco_viagem INT NOT NULL,
+FOREIGN KEY (idPassageiro) REFERENCES passageiro (idPassageiro),
+FOREIGN KEY (idPiloto) REFERENCES piloto (idPiloto),
+idViagem INT AUTO_INCREMENT PRIMARY KEY
+dataViagem VARCHAR(10) NOT NULL,
+destinoViagem VARCHAR(10) NOT NULL,
+precoViagem INT NOT NULL,
 
 );
 
 CREATE TABLE
 	passageiro (
-id_passageiro INT AUTO_INCREMENT PRIMARY KEY
-email_passageiro VARCHAR(30) NOT NULL,
-senha_passageiro VARCHAR(20) NOT NULL,
-nome_passageiro VARCHAR(30) NOT NULL,
-endereco_passageiro VARCHAR(30) NOT NULL,
-cpf_passageiro VARCHAR(11) NOT NULL,
-telefone_passageiro VARCHAR(15) NOT NULL,
+idPassageiro INT AUTO_INCREMENT PRIMARY KEY
+emailPassageiro VARCHAR(30) NOT NULL,
+senhaPassageiro VARCHAR(20) NOT NULL,
+nomePassageiro VARCHAR(30) NOT NULL,
+enderecoPassageiro VARCHAR(30) NOT NULL,
+cpfPassageiro VARCHAR(11) NOT NULL,
+telefonePassageiro VARCHAR(15) NOT NULL,
 );
 
 CREATE TABLE
 	piloto (
-FOREIGN KEY (id_viagem) REFERENCES viagem (id_viagem),
-id_piloto INT AUTO_INCREMENT PRIMARY KEY
-certificacao_piloto VARCHAR(50) NOT NULL,
-especialidade_piloto VARCHAR(30) NOT NULL,
-nome_piloto VARCHAR(30) NOT NULL,
+FOREIGN KEY (idViagem) REFERENCES viagem (idViagem),
+idPiloto INT AUTO_INCREMENT PRIMARY KEY
+certificacaoPiloto VARCHAR(50) NOT NULL,
+especialidadePiloto VARCHAR(30) NOT NULL,
+nomePiloto VARCHAR(30) NOT NULL,
 );
 
-INSERT INTO viagem(id_viagem, data_viagem, destino_viagem, id_passageiro, id_piloto) VALUES ('01', '01052025', 'planeta', '0123', '9999');
-
-INSERT INTO passageiro(email_passageiro, senha_passageiro, id_passageiro, nome_passageiro, cpf_passageiro, endereco_passageiro, telefone_passageiro, id_viagem) VALUES ('maycon@gmail.com','123456789','0123', 'Maycon', '12345678900', 'Rua do exemplo 123', '1511912345678', '01');
-
-INSERT INTO piloto(id_piloto, certificacao_piloto, especialidade_piloto, nome_piloto, id_viagem) VALUES ('9999', '28667365', 'comandante', 'Steff', '01');
-
-INSERT INTO piloto(id_piloto, certificacao_piloto, especialidade_piloto, nome_piloto, id_viagem) VALUES ('9999', '34545345', 'medico', 'Durvan', '01');
-
-INSERT INTO piloto(id_piloto, certificacao_piloto, especialidade_piloto, nome_piloto, id_viagem) VALUES ('9999', '65765655', 'cientista', 'Neil', '01');
-
-INSERT INTO piloto(id_piloto, certificacao_piloto, especialidade_piloto, nome_piloto, id_viagem) VALUES ('9999', '87996766', 'engenheiro', 'Nolan', '01');
